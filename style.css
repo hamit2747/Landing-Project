@@ -1,0 +1,373 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+header{
+    background-color: antiquewhite;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0,0,0,0.7)),url(pexels-hasan-albari-1229861.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+nav{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 140px;
+}
+
+nav img:hover{
+    transition: .3s;
+    opacity: 1 ;
+}
+
+
+.nav-links{
+   
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+    position: relative;
+}
+
+.nav-links li a{
+    text-decoration: none;
+    font-size: 17px;
+    color: white;
+    position: relative;
+}
+
+.nav-links li a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: red;
+    position: absolute;
+    display: block;
+    margin: 4px auto;
+    left: 0;
+    bottom: -4px;
+}
+
+.nav-links li a:hover::after{
+    width: 100%;
+    transition: .3s;
+}
+
+.text-box{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    text-align: center;
+    color: white;
+}
+
+.text-box h1{
+    font-size: 50px;
+}
+
+.text-box p{
+    margin: 10px 50px;
+    font-size: 15px;
+
+}
+
+.hero-btn{
+    text-decoration: none;
+     color: white;
+     border: 1px solid white;
+    padding: 10px 20px;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 4px;
+
+    }
+
+    .hero-btn:hover{
+        border: 1px solid red;
+        background-color: red;
+        transition: .3s;
+    }
+
+    nav .bi{
+        color: white;
+        font-size: 25px;
+        display: none;
+        cursor: pointer;
+    }
+
+
+nav .bi:hover{
+    font-size: 30px;
+}
+
+    @media(max-width:700px){
+        .text-box h1{
+            font-size: 25px;
+        }
+        nav .bi{
+            display: block;
+        }
+        nav div ul {
+            display: none;
+        }
+    }
+
+
+    .course{
+       background-image: url(pexels-sebastiaan-stam-1097456.jpg);
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        padding: 100px;
+        background-size: cover;
+
+    }
+
+    .course h1{
+      
+       font-size: 35px;
+       color: white;
+    }
+
+    .course p{
+        color: #3b3838;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 20px;
+        padding: 10px;
+    }
+
+    .row{
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .course-col{
+        flex-basis: 30%;
+        background-color: wheat;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        padding: 20px 10px;
+    }
+
+
+    .course-col h3{
+        margin: 10px 0;
+    }
+
+    .course-col:hover{
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+        transition: .3s;
+    }
+
+    @media(max-width:678px){
+        .row{
+            flex-direction: column;
+        }
+    }
+
+    .campus{
+        width: 100%;
+        margin:auto;
+        text-align: center;
+        padding-top: 50px;
+    }
+
+    .campus-col{
+        border-radius: 10px;
+        flex-basis: 30%;
+        margin-bottom: 30px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .campus h1{
+        margin: 10px 0;
+
+    }
+
+    .campus p{
+        margin: 20px 0;
+
+    }
+
+    .campus-col img{
+        width: 100%;
+        display: block;
+    }
+
+    .layer{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+    }
+
+    .layer:hover{
+        background-color: rgba(0,0,0,0.3);
+        transition: .3s;
+    }
+
+    .layer h3{
+        font-weight: 500;
+        color: black;
+        font-size: 25px;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        opacity: 0;
+    }
+
+    .layer:hover h3{
+        background-color: wheat;
+        bottom: 50%;
+        opacity: 1;
+        transition: .7s;
+    }
+
+    .facilities{
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        padding-top: 100px;
+
+    }
+
+    .facilities-col{
+        flex-basis: 33.2%;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        background-color: wheat;
+        text-align: left;
+
+    }
+
+    .facilities-col img{
+        width: 100%;
+        border-radius: 10px;
+
+    }
+
+    .facilities-col p{
+        margin: 10px;
+    }
+
+    .facilities p{
+        margin: 20px;
+    }
+
+
+
+    .testimonials{
+        width: 100%;
+        margin: auto;
+        padding-top: 100px;
+        text-align: center;
+    }
+
+    .testimonials-col{
+        flex-basis: 30%;
+        border-radius: 10px;
+        margin-bottom: 5px;
+        text-align: left;
+        cursor: pointer;
+        display: flex;
+        padding: 10px;
+    }
+
+    .testimonials-col img{
+        height: 100px;
+        margin-left: 5px;
+        margin-right: 30px;
+        
+    }
+    
+    .testimonials p{
+        margin: 20px;
+    }
+
+    .testimonials-col h2{
+        margin-top: 15px;
+    }
+
+    .testimonials-col p{
+        padding: 0;
+        margin: 0;
+    }
+
+    .testimonials-col .bi{
+        color: red;
+    }
+
+
+    .ua{
+        width: 90%;
+        margin: 100px auto;
+        background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)) , url(arka-plan.jpg.jpg);
+        background-size: cover;
+        color: white;
+        padding: 100px 0;
+        text-align: center;
+        background-position: center;
+        margin-left: 50px;
+        
+       
+    }
+
+    .ua h1{
+        margin-bottom: 40px;
+
+        
+    }
+
+    @media(max-width:768px) {
+        .u1 h1{
+            font-size: 25px;
+        }
+    }
+
+    .footer{
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        padding: 30px 0;
+    }
+
+    footer h1{
+        margin: 25px 0;
+
+    }
+
+    footer .bi{
+        color: red;
+        margin: 0 10px;
+        cursor: pointer;
+        padding: 20px 10px;
+    }
+
+    .icons{
+        margin: 10px;
+    }
